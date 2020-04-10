@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Tasks</title>
+    </head>
+    <body>
+        <ul>
+            {% for n in tasks %}
+            <li>
+                <form action="http://localhost:5000/user/task/id" method="post">
+                    <label>Task {{n[1]}} is acctually {{n[4]}}.  </label>
+                    <input type="submit" value="Edit" />
+                    <input name="groupe" type="hidden" value="{{n[0]}}" />
+                </form>
+            </li>
+            {% endfor %}
+        </ul>
+        <p>Create a new task</p>
+        <form action="http://localhost:5000/user/task/add" method="post">
+            <input type="submit" value="Create"/>
+        </form>
+        <form action="http://localhost:5000/user" method="get">
+            <input type="submit" value="Back"/>
+        </form>
+    </body>
+</html>

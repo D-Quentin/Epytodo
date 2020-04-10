@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Task {{title}}</title>
+    </head>
+    <body>
+      <h1> Epytodo </h1>
+        <p>Task {{title}}</p>
+        <p>This is the task n°{{nb_task}}</p>
+        <p>It has been created the {{begin}}</p>
+        <p>It is acctualy {{status}}</p>
+        <form action="http://localhost:5000/user/task/id" method="post">
+            <label for="groupe">Change status</label>
+            <select name="groupe" id="groupe">
+                <option value="1">Not started</option>
+                <option value="2">In progress</option>
+                <option value="3">Done</option>
+            </select>
+            <p>{{end}}{{date_end}}</p>
+            <input type="submit" value="Apply changes" style="color:red; font-weight:bold; padding:5px 10px;"/>
+        </form>
+        <form action="http://localhost:5000/user/task" method="get">
+            <input type="submit" value="Back" style="color:red; font-weight:bold; padding:5px 10px;"/>
+        </form>
+    </body>
+</html>

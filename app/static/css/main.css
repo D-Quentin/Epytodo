@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Nunito";
+    src: url("../img/Nunito-Bold.ttf");
+}
+
+body{
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+}
+
+h1{
+
+    text-shadow:   -1px -1px 0 #751C1C,
+                   1px -1px 0 #751C1C,
+                   -1px 1px 0 #751C1C,
+                   1px 1px 0 #751C1C,
+                   1px 1px 10px #141414;color:#DE3535;
+    background-color:#fff;
+    text-align: center;
+    font-size: 5em;
+}
+

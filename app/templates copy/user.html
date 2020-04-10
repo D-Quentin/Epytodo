@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>User</title>
+    </head>
+    <body>
+        <p>Welcome {{username}} your password is : {{password}}.</p>
+        <p> </p>
+        <form action="http://localhost:5000/singout" method="post">
+            <input type="submit" value="Singout"/>
+        </form>
+        <p>View my tasks</p>
+        <form action="http://localhost:5000/user/task" method="get">
+            <input type="submit" value="My tasks"/>
+        </form>
+    </body>
+</html>
